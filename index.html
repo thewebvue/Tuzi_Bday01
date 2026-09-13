@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Happy Birthday</title>
+	<meta name="description" content="Happy Birthday Anggie">
+	<meta name="robots" content="index, follow" />
+	<meta name="keywords" content="Birthday, Happy">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="author" href="alex" />
+
+	<!-- Facebook meta -->
+	<meta property="og:type" content="E-Greeting" />
+	<meta property="og:image" content="assets/images/favicon.ico" />
+	<meta property="og:description" content="Wish you a very Happy Birthday">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- Loader shown while the page (and song) get ready -->
+	<div class="loader" id="loader">
+		<div class="loader__flame"></div>
+		<p class="loader__text">lighting things up…</p>
+	</div>
+
+	<!-- String lights -->
+	<div class="lights" id="lights" aria-hidden="true">
+		<div class="bulb" data-color="yellow"></div>
+		<div class="bulb" data-color="red"></div>
+		<div class="bulb" data-color="blue"></div>
+		<div class="bulb" data-color="green"></div>
+		<div class="bulb" data-color="pink"></div>
+		<div class="bulb" data-color="orange"></div>
+	</div>
+
+	<!-- Vine garland with a couple of glowing bulb ornaments -->
+	<div class="garland" aria-hidden="true">
+		<img src="vine.png" class="garland__vine" alt="">
+		<img src="uggreen.png" class="garland__bulb garland__bulb--1" alt="">
+		<img src="uggreen.png" class="garland__bulb garland__bulb--2" alt="">
+	</div>
+
+	<audio id="song" loop>
+		<source src="assets/audio/hbd.mp3" type="audio/mpeg">
+		Your browser can't play the song, but the wish still counts.
+	</audio>
+
+	<!-- Balloons: rise to spell "HBD" + "BABY" -->
+	<div class="balloon-field" id="balloonField" aria-hidden="true">
+		<div class="balloon-cluster">
+			<div class="balloon" id="b1"><span>H</span></div>
+			<div class="balloon" id="b2"><span>B</span></div>
+			<div class="balloon" id="b3"><span>D</span></div>
+		</div>
+		<div class="balloon-cluster">
+			<div class="balloon" id="b4"><span>T</span></div>
+			<div class="balloon" id="b5"><span>U</span></div>
+			<div class="balloon" id="b6"><span>Z</span></div>
+			<div class="balloon" id="b7"><span>I</span></div>
+		</div>
+	</div>
+
+	<main class="stage" id="stage">
+
+		<div class="banner-wrap">
+			<img src="assets/images/banner.png" class="banner" id="banner" alt="Happy Birthday banner">
+		</div>
+
+		<div class="album" id="album">
+			<div class="photo"><img src="Jyo_img.jpeg" alt="A favourite photo of you"></div>
+		</div>
+
+		<div class="cake-wrap">
+			<div class="cake" id="cake">
+				<div class="cake__glow"></div>
+				<div class="cake__candles" id="candles">
+					<div class="candle"><span class="candle__flame"></span></div>
+					<div class="candle"><span class="candle__flame"></span></div>
+					<div class="candle"><span class="candle__flame"></span></div>
+				</div>
+				<img src="assets/images/person.png" class="cake__photo" alt="Your photo on the cake">
+				<div class="cake__frosting">
+					<span class="cake__drip"></span>
+					<span class="cake__drip"></span>
+					<span class="cake__drip"></span>
+					<span class="cake__drip"></span>
+				</div>
+				<div class="cake__sponge"></div>
+				<div class="cake__plate"></div>
+			</div>
+		</div>
+		<p class="cake-message" id="cakeMessage">Make a wish… 🎂</p>
+
+		<div class="letter" id="letter" aria-live="polite">
+			<img src="vine.png" class="letter__vine" alt="">
+			<p>హ్యాపీ బర్త్‌డే, జోష్నా! ❤️🎂🥺</p>
+<p>నువ్వు నాకు ఎంత ముఖ్యమైన వ్యక్తివో...</p>
+<p>మాటల్లో చెప్పడం</p>
+<p>నిజంగా కష్టం.</p>
+<p>నా జీవితంలో నువ్వు...</p>
+<p><strong>చాలా ప్రత్యేకమైన వ్యక్తిగా మారిపోయావు.</strong></p>
+<p>మనం కలిసి పంచుకున్న...</p>
+<p>ప్రతి జ్ఞాపకం,</p>
+<p>ప్రతి మాట,</p>
+<p>ప్రతి నవ్వు,</p>
+<p>ప్రతి చిన్న క్షణం...</p>
+<p>నాకు చాలా విలువైనవి. 🥺❤️</p>
+<p>నీ మనసు చాలా అందమైనది.</p>
+<p>నువ్వు ఎప్పుడూ ఇలానే మంచి మనసుతో...</p>
+<p>అందంగా ఉండాలని కోరుకుంటున్నాను. 🤍</p>
+<p>నీ భవిష్యత్తులో నీకు...</p>
+<p>అంతులేని ఆనందం,</p>
+<p>విజయం, ప్రశాంతత లభించాలని,</p>
+<p>నువ్వు కోరుకునే ప్రతి కలను...</p>
+<p>ధైర్యంగా సాధించాలని మనస్ఫూర్తిగా కోరుకుంటున్నాను.</p>
+<p>నీకు నిజంగా అర్హమైన...</p>
+<p>మంచి జీవితం,</p>
+<p>మంచి కెరీర్,</p>
+<p>మంచి ప్రేమ,</p>
+<p>ఎంతో ఆనందం దక్కాలని కోరుకుంటున్నాను. ✨❤️</p>
+<p>నువ్వు నాకు ఎంత ప్రత్యేకమో...</p>
+<p>ఎప్పటికీ మర్చిపోవద్దు.</p>
+<p>ఎప్పుడూ నవ్వుతూ ఉండు,</p>
+<p>ఎదుగుతూ ఉండు,</p>
+<p>ఎప్పుడూ సంతోషంగా ఉండు జోష్నా. ❤️🥺</p>
+<p><strong>మరోసారి హ్యాపీ బర్త్‌డే! 🎂✨</strong></p>
+<p><strong>— నీ లెనిన్ ❤️</strong></p>
+			<img src="vine.png" class="letter__vine letter__vine--bottom" alt="">
+		</div>
+
+	</main>
+
+	<div class="toast" id="toast"></div>
+
+	<nav class="dock" aria-label="Birthday steps">
+		<div class="dock__track" id="dockTrack">
+			<button class="btn btn--accent" id="turn_on">💡 Turn on the lights</button>
+			<button class="btn" id="play">🎵 Play our song</button>
+			<button class="btn" id="bannar_coming">🎉 Decorate the banner</button>
+			<button class="btn" id="balloons_flying">🎈 Send up the balloons</button>
+			<button class="btn" id="cake_fadein">🎂 Bring in the cake</button>
+			<button class="btn" id="light_candle">🕯️ Light the candles</button>
+			<button class="btn" id="wish_message">💌 Say happy birthday</button>
+			<button class="btn" id="story">📖 Read your letter</button>
+		</div>
+	</nav>
+
+	<script src="effect.js"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8SQ2H9J48M"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-8SQ2H9J48M');
+	</script>
+</body>
+</html>
